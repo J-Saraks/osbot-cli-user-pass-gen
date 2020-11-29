@@ -1,0 +1,88 @@
+body {
+    background: #1e1b2c;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #ccc;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#amountInput {
+    background-color: #4f6777;
+    color: #f3ebdd;
+}
+
+#amountInput::placeholder {
+    color: #999;
+}
+
+#suffixInput {
+    background-color: #4f6777;
+    color: #f3ebdd;
+}
+
+#suffixInput::placeholder {
+    color: #999
+}
+
+#generate-button {
+    margin-top: 3vh;
+    background-color: #4f6777;
+    color: #f3ebdd;
+    padding: 0.6rem 2rem;
+}
+
+.output-container {
+    margin-top: 3%;
+}
+
+.output-container textarea {
+    background-color: #111;
+    color: white;
+}
+
+#textarea {
+    margin-left: 3rem;
+    width: 20vw;
+    height: 45vh;
+    font-size: 1.3rem;
+    background-color: #202646;
+    border: 1px solid #60647b;
+    border-radius: 5px;
+    color: #f3ebdd;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1260px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #textarea {
+        width: 120vw;
+    }
+}

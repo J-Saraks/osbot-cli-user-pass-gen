@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-190P1LFN7F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-190P1LFN7F');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script data-ad-client="ca-pub-4458010593857882" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+    <h1>OSBot Username and Password Generator</h1>
+    <div class="container">
+        <div class="wrapper">
+            <p>Amount of accounts to generate</p>
+            <input type="number" id="amountInput" value="10">
+            <p>Add an Email suffix (optional)</p>
+            <input type="text" id="suffixInput" placeholder="Example: @gmail.com">
+            <p>Generate bank pin?</p>
+            <input type="checkbox" id="bankPinCheckbox">
+            <button id="generate-button">Generate</button>
+        </div>
+        <div class="output-container">
+            <textarea id="textarea"></textarea>
+        </div>
+    </div>
+    <p id="footer">Made by <a href="https://osbot.org/forum/profile/306714-lagerlv/">an OSBot user</a></p>
+    <script src="script.js"></script>
+</body>
+</html>
