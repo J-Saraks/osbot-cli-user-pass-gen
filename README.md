@@ -11,7 +11,8 @@ Generates in CLI compatible format of - username:password:bankpin
 2. Input email suffix if you want to add it (example: @gmail.com)  
 3. Check the box if you want bank pin or not  
 4. Press generate.  
-5. Copy the generated account data and input into OSBots CLI.  
+5. Make accounts with the data generated  
+6. Copy the generated account data and input into OSBots CLI.  
 
 
 ## To-do List:
@@ -19,3 +20,5 @@ Generates in CLI compatible format of - username:password:bankpin
 * Convert to server-side  
 * Downloadable .txt of generated accounts  
 * Update design  
+
+* In the very far future, maybe chrome extension to auto make the accounts with the input generated
