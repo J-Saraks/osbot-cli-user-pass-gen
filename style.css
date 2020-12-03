@@ -1,7 +1,7 @@
 body {
     background: #1e1b2c;
-    color: #ccc;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -11,6 +11,7 @@ p {
 
 h1 {
     text-align: center;
+    font-size: 2.3rem;
 }
 
 .container {
@@ -25,6 +26,17 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.details-input {
+    border-radius: 3px;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#required {
+    color: red;
 }
 
 #amountInput {
@@ -42,14 +54,21 @@ h1 {
 }
 
 #suffixInput::placeholder {
-    color: #999
+    color: #999;
+}
+
+#bankPinCheckbox {
+    cursor: pointer;
 }
 
 #generate-button {
     margin-top: 3vh;
-    background-color: #4f6777;
-    color: #f3ebdd;
-    padding: 0.6rem 2rem;
+    background-color: #285e81;
+    color: #fff;
+    padding: 1.25rem 3rem;
+    border-radius: 2px;
+    font-size: 1.25rem;
+    cursor: pointer;
 }
 
 .output-container {
@@ -63,7 +82,7 @@ h1 {
 
 #textarea {
     margin-left: 3rem;
-    width: 20vw;
+    width: 30vw;
     height: 45vh;
     font-size: 1.3rem;
     background-color: #202646;
@@ -77,12 +96,22 @@ h1 {
     text-align: center;
 }
 
+#osbot-link {
+    color: #469bd3;
+}
+
 @media only screen and (max-width: 1260px) {
+    h1 {
+        font-size: 1.75rem;
+    }
     .container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #textarea {
         width: 120vw;
+        height: 25vh;
     }
 }

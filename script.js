@@ -5,11 +5,11 @@ const generatePassword = () => {
     var length = 8,
     charset = "abcdefghijklmnopqrstuvwxyz0123456789",
     retVal = "";
-
+    
     for (var i = 0, n = charset.length; i < length; ++i) {
         retVal += charset.charAt(Math.floor(Math.random() * n));
     }
-
+    
     return retVal;
 }
 
@@ -46,22 +46,22 @@ generateButton.addEventListener("click", () => {
     const amountInput = document.getElementById("amountInput").value;
     const suffixInput = document.getElementById("suffixInput").value;
     const bankPinCheckbox = document.getElementById("bankPinCheckbox").checked;
-
-
+    
+    
     if (textarea.value != '') {
         textarea.value === '';
     }
-
+    
     if (bankPinCheckbox === true) {
         for (let i = 0; i < amountInput; i++) {
-            textarea.value += `${randomNumberLow()}${generateUsername()}${randomNumberHigh()}:${generatePassword()}:${bankPinGenerator()} \n`;
+            textarea.value += `${randomNumberLow()}${generateUsername()}${randomNumberHigh()}${suffixInput}:${generatePassword()}:${bankPinGenerator()} \n`;
         }
     }
-
+    
     else {
         for (let i = 0; i < amountInput; i++) {
-            textarea.value += `${randomNumberLow()}${generateUsername()}${randomNumberHigh()}:${generatePassword()} \n`;
+            textarea.value += `${randomNumberLow()}${generateUsername()}${randomNumberHigh()}${suffixInput}:${generatePassword()} \n`;
         }
     }
-
+    
 })

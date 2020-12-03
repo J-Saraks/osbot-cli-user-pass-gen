@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-190P1LFN7F"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-190P1LFN7F"></script> -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,16 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
-    <script data-ad-client="ca-pub-4458010593857882" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>OSBot Username and Password Generator</h1>
     <div class="container">
         <div class="wrapper">
-            <p>Amount of accounts to generate</p>
-            <input type="number" id="amountInput" value="10">
-            <p>Add an Email suffix (optional)</p>
-            <input type="text" id="suffixInput" placeholder="Example: @gmail.com">
+            <p>Amount of accounts to generate <span id="required">*</span> </p>
+            <input type="number" id="amountInput" placeholder="0" class="details-input">
+            <p>Add an Email suffix?</p>
+            <input type="text" id="suffixInput" placeholder="Example: @gmail.com" class="details-input">
             <p>Generate bank pin?</p>
             <input type="checkbox" id="bankPinCheckbox">
             <button id="generate-button">Generate</button>
@@ -32,7 +33,7 @@
             <textarea id="textarea"></textarea>
         </div>
     </div>
-    <p id="footer">Made by <a href="https://osbot.org/forum/profile/306714-lagerlv/">an OSBot user</a></p>
+    <p id="footer">Made by <a href="https://osbot.org/forum/profile/306714-lagerlv/" id="osbot-link">an OSBot user</a></p>
     <script src="script.js"></script>
 </body>
 </html>
