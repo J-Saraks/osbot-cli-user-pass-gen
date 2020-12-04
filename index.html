@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-190P1LFN7F"></script> -->
 <script>
@@ -10,6 +11,7 @@
 
   gtag('config', 'G-190P1LFN7F');
 </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
@@ -18,9 +20,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>OSBot Username and Password Generator</h1>
+    <ul>
+        <li><a href="accounts.html">Account Creator</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
     <div class="container">
         <div class="wrapper">
+            <h1>OSBot Username and Password Generator</h1>
             <p>Amount of accounts to generate <span id="required">*</span> </p>
             <input type="number" id="amountInput" placeholder="0" class="details-input">
             <p>Add an Email suffix?</p>
@@ -33,7 +39,7 @@
             <textarea id="textarea"></textarea>
         </div>
     </div>
-    <p id="footer">Made by <a href="https://osbot.org/forum/profile/306714-lagerlv/" id="osbot-link">an OSBot user</a></p>
-    <script src="script.js"></script>
+    <p id="footer">More Info: <a href="https://osbot.org/forum/topic/163692-user-and-pass-generator-for-cli-mass-email-compatible" id="osbot-link">OSBot Thread</a></p>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
